@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Гектабайт</h1>
+    <p class="slogan">Ваше хозяйство — в гектабайтах.</p>
+    <p>Дневник сада, огорода и домашних животных. Планирование грядок,
+       севообороты, учёт запасов — всё в одном месте.</p>
+    <a href="{{ url_for('login') }}" class="btn big">Начать</a>
+</section>
+
+<section class="features">
+    <div class="card"><h3>🌱 Дневник</h3><p>Записывайте всё, что происходит на участке.</p></div>
+    <div class="card"><h3>🗺️ Грядки</h3><p>Интерактивная карта и история посадок.</p></div>
+    <div class="card"><h3>🔄 Севообороты</h3><p>Подсказки, что сажать после чего.</p></div>
+    <div class="card"><h3>🐖 Хозяйство</h3><p>Учёт животных и запасов.</p></div>
+</section>
+{% endblock %}
